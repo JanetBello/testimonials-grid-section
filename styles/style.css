@@ -1,0 +1,151 @@
+:root {
+  /* colors */
+  --body-clr: hsl(210, 46%, 95%);
+  --text-clr: hsl(0, 0%, 81%);
+  /* article bg colors */
+  --art-1: hsl(263, 55%, 52%);
+  --art-2: hsl(217, 19%, 35%);
+  --art-3-5: hsl(0, 0%, 100%);
+  --art-4: hsl(219, 29%, 14%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.attribution {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--accent-clr);
+}
+
+/*desktop design  */
+
+body {
+  background-color: var(--body-clr);
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: var(--text-clr);
+  font-size: 13;
+}
+
+.article-card {
+  /* align-content: center; */
+  /* width: 900px; */
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(minmax (4, autofit));
+  grid-template-rows: repeat(2, autofit);
+  border-radius: 5px;
+  overflow: hidden;
+  grid-template-areas:
+    "c1 c1 c1 c1 c2 sidebar"
+    "c3 c4 c4 c4 c4 sidebar";
+  margin-inline: 7rem;
+  margin-block: 5rem;
+  align-self: center;
+}
+
+h2 + p {
+  opacity: 50%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: large;
+}
+
+h3 + p {
+  opacity: 70%;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+h3 {
+  padding-top: 1.5rem;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.section-name {
+  display: flex;
+  gap: 20px;
+}
+.name {
+  padding-top: 10px;
+}
+
+.section-1 {
+  background-color: var(--art-1);
+  grid-area: c1;
+  padding: 20px;
+  padding-inline: 2rem;
+  border-radius: 10px;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+}
+
+.section-2 {
+  background-color: var(--art-2);
+  grid-area: c2;
+  padding: 20px;
+  padding-inline: 2rem;
+  border-radius: 10px;
+}
+
+.section-3 {
+  background-color: var(--art-3-5);
+  grid-area: c3;
+  color: var(--art-2);
+  padding: 20px;
+  padding-inline: 2rem;
+  border-radius: 10px;
+}
+
+.section-4 {
+  background-color: var(--art-4);
+  grid-area: c4;
+  padding: 20px;
+  padding-inline: 2rem;
+  border-radius: 10px;
+}
+
+.section-5 {
+  background-color: var(--art-3-5);
+  grid-area: sidebar;
+  color: var(--art-2);
+  padding: 20px;
+  padding-inline: 2rem;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .article-card {
+    display: block;
+  }
+}
