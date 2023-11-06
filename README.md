@@ -21,7 +21,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -40,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://www.frontendmentor.io/solutions/responsive-news-homepage-er0KG5iH2_)
-- Live Site URL: [live site](https://news-homepage-main-six-livid.vercel.app//)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/responsive-testimonial-grid-section-6E9F8Z-Ge-)
+- Live Site URL: [live site](https://testimonials-grid-section-iota-nine.vercel.app/)
 
 ## My process
 
@@ -59,7 +58,3 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [Janet Bello](https://www.frontendmentor.io/profile/JanetBello)
-
-## Acknowledgments
-
-I want to thank Google, MDN Docs and w3schools for helping me out in this challenge.
